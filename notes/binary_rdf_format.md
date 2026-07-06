@@ -1,6 +1,6 @@
 # The RDF4J Binary RDF Format
 
-This document describes the structure of the RDF4J Binary RDF format
+This document describes the structure of the [RDF4J Binary RDF](https://rdf4j.org/documentation/reference/rdf4j-binary/) format
 (`application/x-binary-rdf`, `RDFFormat.BINARY`, usual file extension
 `.brf`), covering both existing format versions: **version 1** (the original
 format, described on the rdf4j.org documentation page) and **version 2**
@@ -8,7 +8,7 @@ format, described on the rdf4j.org documentation page) and **version 2**
 it).
 
 Everything below is taken directly from the reference Java implementation in
-the `eclipse-rdf4j/rdf4j` repository, module `core/rio/binary`:
+the [`eclipse-rdf4j/rdf4j`](https://github.com/eclipse-rdf4j/rdf4j) repository, module [`core/rio/binary`](https://github.com/eclipse-rdf4j/rdf4j/tree/main/core/rio/binary):
 
 - `BinaryRDFConstants.java` — magic number, version numbers, record and
   value type constants

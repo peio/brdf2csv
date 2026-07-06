@@ -1,7 +1,9 @@
 # brdf2csv
 
-Convert RDF4J Binary RDF (`application/x-binary-rdf`, as exported by Ontotext
+Convert [RDF4J Binary RDF](https://rdf4j.org/documentation/reference/rdf4j-binary/) (`application/x-binary-rdf`, as exported by Ontotext
 GraphDB) to CSV. Pure Python, stdlib only, fully streaming (constant memory).
+
+
 
 ## Format support
 
@@ -11,9 +13,11 @@ GraphDB) to CSV. Pure Python, stdlib only, fully streaming (constant memory).
 | String encoding | int32 length (UTF-16 code units) + UTF-16BE bytes | varint byte length + bytes in the charset declared in the header (UTF-8 in practice) |
 | Value ref IDs | int32 | varint (unsigned LEB128) |
 
+Format documentation in the [notes/binary_rdf_format.md](https://github.com/peio/brdf2csv/blob/main/notes/binary_rdf_format.md)
+
 Both versions are auto-detected from the header. Implemented directly from the
 authoritative RDF4J sources (`BinaryRDFParser.java`, `BinaryRDFWriter.java`,
-`BinaryRDFConstants.java`, `IOUtil.java` in `eclipse-rdf4j/rdf4j`); note that
+`BinaryRDFConstants.java`, `IOUtil.java` in [`eclipse-rdf4j/rdf4j`](https://github.com/eclipse-rdf4j/rdf4j)); note that
 the documentation page at rdf4j.org describes version 1 only.
 
 Handles: URIs, blank nodes, plain/lang/datatyped literals, value
