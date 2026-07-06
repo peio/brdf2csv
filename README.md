@@ -3,7 +3,12 @@
 Convert [RDF4J Binary RDF](https://rdf4j.org/documentation/reference/rdf4j-binary/) (`application/x-binary-rdf`, as exported by Ontotext
 GraphDB) to CSV. Pure Python, stdlib only, fully streaming (constant memory).
 
-
+## Key assumptions
+This project is built on top of the following assumptions:
+1. **Knowledge Graphs are where data quality is created.** For aligning, integrating, and semantically enriching data from heterogeneous sources, the knowledge graph is the superior representation: identity, relationships, and meaning are explicit, validated, and queryable.
+2. **Tables is how data is consumed.** Most users and platforms prefer the convenience of tabular formats — CSV, Parquet, and the open table formats built on them — with the mature SQL and dataframe tooling around them.
+3. **Binary RDF** is the most efficient bridge between the two. For bulk exchange of graph data out of an RDF4J-based store such as GraphDB, the RDF4J Binary RDF format is the most efficient serialization: compact, lossless, and streaming.
+4. **Python** offers the right balance of convenience and speed.
 
 ## Format support
 
