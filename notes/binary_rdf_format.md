@@ -420,7 +420,7 @@ identical content, versus 192 in version 2.
 
 - Format documentation (describes version 1):
   https://rdf4j.org/documentation/reference/rdf4j-binary/
-- Reference implementation, `eclipse-rdf4j/rdf4j` repository,
+- Reference implementation, [`eclipse-rdf4j/rdf4j`](https://github.com/eclipse-rdf4j/rdf4j) repository,
   `core/rio/binary/src/main/java/org/eclipse/rdf4j/rio/binary/`:
   `BinaryRDFConstants.java`, `BinaryRDFWriter.java`, `BinaryRDFParser.java`,
   `BinaryRDFWriterSettings.java`
